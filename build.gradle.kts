@@ -1,5 +1,6 @@
 plugins {
     kotlin("jvm") version "1.8.0"
+    kotlin("plugin.serialization") version "1.8.0"
     application
 }
 
@@ -11,6 +12,8 @@ repositories {
 }
 
 dependencies {
+    implementation("com.google.cloud:google-cloud-texttospeech:2.13.0")
+    implementation("org.jetbrains.kotlinx:kotlinx-serialization-core:1.3.0")
     testImplementation(kotlin("test"))
 }
 
